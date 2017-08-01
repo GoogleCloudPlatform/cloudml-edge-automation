@@ -1,0 +1,4 @@
+six==1.10.0
+apache-beam[gcp]==2.1.0
+pillow
+tensorflow

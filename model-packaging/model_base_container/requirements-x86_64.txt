@@ -1,0 +1,4 @@
+six==1.10.0
+Flask==0.12.2
+protobuf==3.3.0
+tensorflow==1.2.0

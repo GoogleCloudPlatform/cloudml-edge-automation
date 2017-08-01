@@ -1,0 +1,20 @@
+[Unit]
+Description=standalone kubelet
+Requires=local-fs.target
+After=rsyslog.service
+
+[Service]
+# Type=forking
+Type=simple
+GuessMainPID=no
+StandardInput=null
+User=root
+Group=root
+WorkingDirectory=/opt/device
+ExecStart=/usr/local/bin/kubelet --allow-privileged=true --enable-server=false --pod-manifest-path=/opt/device/pods/ --v=3
+Restart=always
+RestartSec=1
+
+
+[Install]
+WantedBy=default.target
