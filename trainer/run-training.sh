@@ -84,7 +84,7 @@ gcloud ml-engine jobs submit training "$MODEL_VERSION" \
   --package-path trainer \
   --staging-bucket "gs://${PROJECT}-training/" \
   --region $REGION \
-  --runtime-version=1.0 \
+  --runtime-version=1.2 \
   --config cloudml-config.yaml \
   -- \
   --output_path "gs://${PROJECT}-model-output/${MODEL_NAME}/${MODEL_VERSION}" \

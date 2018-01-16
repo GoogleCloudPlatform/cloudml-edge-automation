@@ -8,9 +8,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 REQUIRED_PACKAGES = [
-  'grpc-google-iam-v1==0.11.1',
-  'tensorflow',
-  'google-cloud'
+  'google-cloud-storage',
 ]
 
 if __name__ == '__main__':
