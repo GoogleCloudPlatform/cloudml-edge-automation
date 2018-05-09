@@ -26,8 +26,6 @@
 # 
 
 # Now that we are set up, we can start processing some flowers images.
-declare -r PROJECT=$(gcloud config list project --format "value(core.project)")
-
 declare -r BUCKET="gs://iot-ml-edge-public"
 declare -r GCS_PATH="${BUCKET}"
 declare -r DICT_FILE=${GCS_PATH}/parts_images_dictionary.txt
